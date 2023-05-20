@@ -7,7 +7,7 @@ import {
     Grid,
     Divider,
 } from "@material-ui/core";
-
+import Form from "./Form/Form";
 import useStyles from "./styles";
 
 const Main = () => {
@@ -44,7 +44,7 @@ const Main = () => {
                         Monday...
                     </Typography>
                     <Divider />
-                    {/* Form */}
+                    <Form />
                 </CardContent>
                 <CardContent className={classes.CardContent}>
                     <Grid container spacing={2}>
