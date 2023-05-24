@@ -8,14 +8,15 @@ export default makeStyles(() => ({
     },
     button: {
         marginTop: "20px",
-        backgroundColor: "#fbb034",
-        backgroundImage: "linear-gradient(315deg, #fbb034 0%, #ffdd00 74%)",
+        backgroundColor: "#09091a",
+
         color: "white",
         border: "none",
         transition: "transform 0.3s ease",
         "&:hover": {
             border: "none",
             transform: "scale(1.02)",
+            background: "radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)",
         },
     },
 }));

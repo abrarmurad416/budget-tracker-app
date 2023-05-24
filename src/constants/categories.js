@@ -1,13 +1,14 @@
 const incomeColors = [
-    "#123123",
-    "#154731",
-    "#165f40",
-    "#16784f",
-    "#14915f",
-    "#10ac6e",
-    "#0bc77e",
-    "#04e38d",
-    "#00ff9d",
+    "#143623",
+    "#1B4A2C",
+    "#236F35",
+    "#2D9440",
+    "#36B74B",
+    "#40DC56",
+    "#4AF361",
+    "#54FF6C",
+    "#5EFF7C",
+    "#96FFAD",
 ];
 const expenseColors = [
     "#b50d12",
@@ -28,11 +29,12 @@ export const incomeCategories = [
     { type: "Investments", amount: 0, color: incomeColors[1] },
     { type: "Extra income", amount: 0, color: incomeColors[2] },
     { type: "Deposits", amount: 0, color: incomeColors[3] },
-    { type: "Lottery", amount: 0, color: incomeColors[4] },
+    { type: "Stocks", amount: 0, color: incomeColors[4] },
     { type: "Gifts", amount: 0, color: incomeColors[5] },
     { type: "Salary", amount: 0, color: incomeColors[6] },
     { type: "Savings", amount: 0, color: incomeColors[7] },
     { type: "Rental income", amount: 0, color: incomeColors[8] },
+    { type: "Other", amount: 0, color: incomeColors[9] },
 ];
 
 export const expenseCategories = [
@@ -45,8 +47,7 @@ export const expenseCategories = [
     { type: "House", amount: 0, color: expenseColors[6] },
     { type: "Entertainment", amount: 0, color: expenseColors[7] },
     { type: "Phone", amount: 0, color: expenseColors[8] },
-    { type: "Pets", amount: 0, color: expenseColors[9] },
-    { type: "Other", amount: 0, color: expenseColors[10] },
+    { type: "Other", amount: 0, color: expenseColors[9] },
 ];
 
 export const resetCategories = () => {
