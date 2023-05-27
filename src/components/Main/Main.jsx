@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
     Card,
     CardHeader,
@@ -10,9 +10,12 @@ import {
 import Form from "./Form/Form";
 import List from "./List/List";
 import useStyles from "./styles";
+import { ExpenseTrackerContext } from "../../context/context";
+import InfoCard from "../InfoCard";
 
 const Main = () => {
     const classes = useStyles();
+    const { balance } = useContext(ExpenseTrackerContext);
 
     return (
         <div>
@@ -31,7 +34,7 @@ const Main = () => {
                         variant="h5"
                         className={classes.font}
                     >
-                        Total Balance $100
+                        Total Balance ${balance}
                     </Typography>
                     <Typography
                         variant="subtitle1"
@@ -41,10 +44,9 @@ const Main = () => {
                             color: "#999999",
                         }}
                     >
-                        Try saying: Add income for $100 in Category Salary for
-                        Monday...
+                        <InfoCard />
                     </Typography>
-                    <Divider />
+                    <Divider  className={classes.divider}/>
                     <Form />
                 </CardContent>
                 <CardContent className={classes.CardContent}>
@@ -55,8 +57,6 @@ const Main = () => {
                     </Grid>
                 </CardContent>
             </Card>
-            <br />
-            <br />
             <br />
             <br />
         </div>
