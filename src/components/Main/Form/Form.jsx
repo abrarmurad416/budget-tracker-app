@@ -130,7 +130,7 @@ const Form = () => {
     return (
         <div>
             <Grid container spacing={2}>
-                <CustomizedSnackbar open={open} setOpen={setOpen}/>
+                <CustomizedSnackbar open={open} setOpen={setOpen} />
                 <Grid item xs={12}>
                     <Typography align="center" variant="subtitle2" gutterBottom>
                         {segment && segment.words.map((w) => w.value).join(" ")}
@@ -149,7 +149,7 @@ const Form = () => {
                             }
                         >
                             <MenuItem value="Income">Income</MenuItem>
-                            <MenuItem value="Expense">Expenses</MenuItem>
+                            <MenuItem value="Expense">Expense</MenuItem>
                         </Select>
                     </FormControl>
                 </Grid>
@@ -157,6 +157,7 @@ const Form = () => {
                     <FormControl fullWidth>
                         <InputLabel>Category</InputLabel>
                         <Select
+                            className={classes.select}
                             value={formData.category}
                             onChange={(e) =>
                                 setFormData({

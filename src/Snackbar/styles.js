@@ -10,5 +10,6 @@ export default makeStyles((theme) => ({
 
     alert: {
         backgroundColor: "#4169E1",
+        fontWeight: "bold"
     },
 }));

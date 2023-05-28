@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Details from "./components/Details/Details";
 import { Grid } from "@material-ui/core";
 import useStyles from "./styles";
@@ -10,6 +10,7 @@ import {
 
 const App = () => {
     const classes = useStyles();
+    const main = useRef(null); // Create a reference using useRef
 
     return (
         <div>
@@ -24,7 +25,7 @@ const App = () => {
                 <Grid item xs={12} sm={4} className={classes.mobile}>
                     <Details title="Income" />
                 </Grid>
-                <Grid item xs={12} sm={3} className={classes.main}>
+                <Grid ref={main} item xs={12} sm={3} className={classes.main}>
                     <Main />
                 </Grid>
                 <Grid item xs={12} sm={4} className={classes.desktop}>
@@ -33,12 +34,12 @@ const App = () => {
                 <Grid item xs={12} sm={4} className={classes.last}>
                     <Details title="Expense" />
                 </Grid>
-            </Grid>
-            <div>
-                <PushToTalkButtonContainer>
+                <PushToTalkButtonContainer
+                    style={{ position: "absolute"}}
+                >
                     <PushToTalkButton />
                 </PushToTalkButtonContainer>
-            </div>
+            </Grid>
         </div>
     );
 };

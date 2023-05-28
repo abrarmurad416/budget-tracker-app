@@ -21,8 +21,8 @@ const Main = () => {
         <div>
             <Card className={classes.root}>
                 <CardHeader
-                    title="Expenses Tracker"
-                    subheader="Powered by Speechly"
+                    title="SpeakSpend"
+                    subheader="Simplify financial management with the control of your voice."
                     titleTypographyProps={{
                         className: classes.font,
                         style: { fontFamily: "'Lexend Deca', sans-serif" },
@@ -46,7 +46,7 @@ const Main = () => {
                     >
                         <InfoCard />
                     </Typography>
-                    <Divider  className={classes.divider}/>
+                    <Divider className={classes.divider} />
                     <Form />
                 </CardContent>
                 <CardContent className={classes.CardContent}>
