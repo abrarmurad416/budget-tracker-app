@@ -20,14 +20,27 @@ const Main = () => {
     return (
         <div>
             <Card className={classes.root}>
-                <CardHeader
-                    title="SpeakSpend"
-                    subheader="Simplify financial management with the control of your voice."
-                    titleTypographyProps={{
-                        className: classes.font,
-                        style: { fontFamily: "'Lexend Deca', sans-serif" },
-                    }}
-                />
+                <div>
+                    <CardHeader
+                        title="SpeakSpend"
+                        subheader="Simplify financial management with the control of your voice."
+                        titleTypographyProps={{
+                            className: classes.font,
+                            style: { fontFamily: "'Lexend Deca', sans-serif" },
+                        }}
+                    />
+                    <Typography
+                        align="left"
+                        variant="subtitle1"
+                        style={{
+                            marginLeft: "16px",
+                            marginBottom: "20px",
+                            color: "#999999",
+                        }}
+                    >
+                        Built with 🧰 by Abrar Murad
+                    </Typography>
+                </div>
                 <CardContent>
                     <Typography
                         align="center"
